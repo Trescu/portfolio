@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Bloom Café</title>
+</head>
+
+<body>
+    <!--
+    PROJEKT SPECIFIKÁCIÓ
+
+    Készíts egy egyoldalas landing page-et a képzeletbeli
+    Bean & Bloom Café számára.
+
+    Az oldal tartalmazza:
+
+    1. BEVEZETŐ RÉSZ
+    - a kávézó nevét;
+    - egy rövid hangulatleírást;
+    - navigációt az oldal fontosabb részeihez:
+      Rólunk, Kínálat, Élmény, Látogatás, Kapcsolat.
+
+    2. RÓLUNK
+    - a kávézó rövid bemutatását;
+    - egy hivatkozást, amely a kínálathoz vezet.
+
+    3. KÍNÁLAT
+    A kínálat három kategóriából álljon:
+    - Kávék;
+    - Sütemények;
+    - Szezonális ajánlat.
+
+    A kínálaton belül legyen külön navigáció,
+    amely közvetlenül ezekhez a kategóriákhoz vezet.
+
+    A Kávék kategória tartalmazzon legalább 3 terméket.
+    Minden termékhez tartozzon:
+    - név;
+    - rövid leírás;
+    - ár.
+
+    A Sütemények kategória tartalmazzon legalább 2 terméket.
+    Minden termékhez tartozzon:
+    - név;
+    - rövid leírás;
+    - ár.
+
+    A Szezonális ajánlat tartalmazzon legalább 1 terméket:
+    - névvel;
+    - rövid leírással;
+    - árral.
+
+    4. KÁVÉZÓ ÉLMÉNY
+    - rövid bemutató szöveg;
+    - legalább két önálló tartalmi egység:
+      például a tér bemutatása és a közösségi hangulat.
+
+    5. LÁTOGATÁS
+    Tartalmazza:
+    - hétköznapi nyitvatartás;
+    - hétvégi nyitvatartás;
+    - cím;
+    - hivatkozás a kapcsolatfelvételi részhez.
+
+    6. NAPI AJÁNLAT
+    - legyen egy, a fő tartalomhoz kapcsolódó,
+      de kiegészítő jellegű napi ajánlat;
+    - tartalmazzon hivatkozást a szezonális kínálathoz.
+
+    7. KAPCSOLAT
+    Tartalmazza:
+    - a kávézó nevét;
+    - címét;
+    - kattintható e-mail-címet;
+    - kattintható telefonszámot.
+
+    8. ALSÓ NAVIGÁCIÓ ÉS LEZÁRÁS
+    - legyen egy további navigációs lehetőség
+      az oldal fontosabb részeihez;
+    - szerepeljen szerzői jogi információ.
+
+    -->
+
+    <header>
+        <h1>Bean & Bloom Café</h1>
+        <p>Kézműves kávék, friss péksütemények és nyugodt városi hangulat.</p>
+
+        <nav>
+            <a href="#about">Rólunk</a>
+            <a href="#menu">Kínálat</a>
+            <a href="#experience">Élmény</a>
+            <a href="#visit">Látogatás</a>
+            <a href="#contact">Kapcsolat</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+
+            <h2>Rólunk</h2>
+            <p>
+                A Bean & Bloom Café egy barátságos városi kávézó, ahol a minőségi kávé,
+                a friss péksütemények és a nyugodt környezet találkozik.
+            </p>
+            <a href="#menu">Teljes kínálat megtekintése</a>
+
+        </section>
+
+        <section id="menu">
+            <h2>Kiemelt kínálat</h2>
+
+            <nav aria-label="Kínálat gyorslinkek">
+                <a href="#coffee">Kávék</a>
+                <a href="#pastries">Sütemények</a>
+                <a href="#seasonal">Szezonális ajánlat</a>
+            </nav>
+
+            <section id="coffee">
+                <h3>Kávék</h3>
+
+                <article>
+                    <h4>Fahéjas Latte</h4>
+                    <p>Lágy tejhab, espresso és meleg fűszeres ízvilág.</p>
+                    <p>Ár: 1350 Ft</p>
+                </article>
+                <article>
+                    <h4>Espresso Tonic</h4>
+                    <p>Frssítő, citrusos kávékülönlegesség tonikkal és jéggel</p>
+                    <p>Ár: 1290 Ft</p>
+                </article>
+                <article>
+                    <h4>Vaníliás cold brew</h4>
+                    <p>Hideg kávé Vaníliás ízzel, jéggel tálalva</p>
+                    <p>Ár: 1390 Ft</p>
+                </article>
+
+            </section>
+
+            <section id="pastries">
+                <h3>Sütemények</h3>
+
+                <article>
+                    <h4>Házi croissant</h4>
+                    <p>Vajas, réteges péksütemény reggeli kávé mellé.</p>
+                    <p>Ár: 890 Ft</p>
+                </article>
+
+                <article>
+                    <h4>Mandulás csiga</h4>
+                    <p>Puha tészta, mandulás töltelék és enyhén karamellizált tetejű sütemény.</p>
+                    <p>Ár: 990 Ft</p>
+                </article>
+            </section>
+
+            <section id="seasonal">
+                <h3>Szezonális ajánlat</h3>
+
+                <article>
+                    <h4>Téli mézes cappuccino</h4>
+                    <p>Mézzel, fahéjjal és krémes tejhabbal készített szezonális ital.</p>
+                    <p>Ár: 1450 Ft</p>
+                </article>
+            </section>
+        </section>
+
+        <section id="experience">
+            <h2>Kávézó Élmény</h2>
+
+            <p>
+                A kávézót lassú reggelikhez, baráti beszélgetésekhez, tanuláshoz
+                és nyugodt délutáni munkához terveztük.
+            </p>
+
+            <article>
+                <h3>Nyugodt tér</h3>
+                <p>Kényelmes asztalok, termlszetes fény és halk háttérzene vár.</p>
+            </article>
+
+            <article>
+                <h3>Közösségi hangulat</h3>
+                <p>Barátságos környezet, ahol könnyű beszélgetni, olvasni vagy dolgozni.</p>
+            </article>
+        </section>
+
+        <section id="visit">
+            <h2>Látogatás</h2>
+            <p><strong>Nyitvatartás:</strong> Hétfő-Péntek, 08:00-18:00</p>
+            <p><strong>Hétvégén:</strong> 09:00-17:00</p>
+            <p><strong>Cím:</strong>  1053 Budapest, Példa utca 12.</p>
+            <a href="#contact">Kapcsolatfelvétel</a>
+        </section>
+
+        <aside>
+            <h2>Napi ajánlat</h2>
+            <p>Ma minden fahéjas latte mellé féláron jár egy házi croissant</p>
+            <a href="#seasonal">Szezonális ajánlat megtekintése</a>
+        </aside>
+    </main>
+
+    <footer id="contact">
+        <h2>Kapcsolat</h2>
+
+        <address>
+            Bean & Bloom Café<br>
+            1053 Budapest, Példa utca 12.<br>
+            <a href="mailto:hello@beanandbloom.hu">hello@beanandbloom.hu</a><br>
+            <a href="tel:+3612345678">+36 1 234 5678</a>
+        </address>
+
+        <nav aria-label="Lábléc navigáció">
+            <a href="#about">Rólunk</a>
+            <a href="#menu">Kínálat</a>
+            <a href="#experience">Élmény</a>
+            <a href="#visit">Látogatás</a>
+
+            <p>2026 Bean & Bloom Café. Minden jog fenntartva.</p>
+        </nav>
+    </footer>
+</body>
+
+</html>
