@@ -1,0 +1,352 @@
+/* ==========================
+   Bean & Bloom Café
+   Modern, világos CSS
+========================== */
+
+:root {
+    --bg: #f8f5f1;
+    --surface: #ffffff;
+    --primary: #6f4e37;
+    --primary-dark: #513827;
+    --accent: #d8b78f;
+    --text: #3b342e;
+    --text-light: #6f665f;
+    --border: #ebe4dc;
+
+    --radius: 16px;
+    --shadow: 0 8px 24px rgba(0, 0, 0, .08);
+
+    --transition: .25s ease;
+    --max-width: 1200px;
+}
+
+/* ==========================
+   Alapbeállítások
+========================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* ==========================
+   Fejléc
+========================== */
+
+header {
+    background: linear-gradient(135deg, #fdf8f3, #f2e7db);
+    text-align: center;
+    padding: 4rem 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--primary);
+}
+
+header p {
+    max-width: 650px;
+    margin: 1rem auto 2rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* ==========================
+   Navigáció
+========================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+nav a {
+    background: white;
+    padding: .8rem 1.3rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0,0,0,.05);
+}
+
+nav a:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   Fő tartalom
+========================== */
+
+main {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 3rem 1.2rem;
+}
+
+main>section,
+aside {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--primary-dark);
+}
+
+h4 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+p {
+    color: var(--text-light);
+}
+
+/* ==========================
+   Gomb stílusú linkek
+========================== */
+
+section>a,
+aside a,
+#visit a {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--primary);
+    color: white;
+    padding: .85rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+section > a:hover,
+aside a:hover,
+#visit a:hover {
+    background: var(--primary-dark);
+    color: #fff;
+}
+
+/* ==========================
+   Kínálat
+========================== */
+
+#menu nav {
+    margin: 2rem 0;
+}
+
+#coffee,
+#pastries,
+#seasonal {
+    margin-top: 2.5rem;
+}
+
+/* Kártyák */
+
+#coffee,
+#pastries,
+#seasonal {
+    display: grid;
+    gap: 1.5rem;
+}
+
+#coffee h3,
+#pastries h3,
+#seasonal h3 {
+    grid-column: 1 / -1;
+}
+
+article {
+    background: #fffdfb;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 5px 16px rgba(0,0,0,.06);
+    transition: var(--transition);
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+article p:last-child {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* ==========================
+   Grid-ek
+========================== */
+
+#coffee {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+#pastries {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+#seasonal {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+#experience {
+    display: grid;
+    gap: 1.5rem;
+}
+
+#experience h2,
+#experience>p {
+    grid-column: 1 / -1;
+}
+
+#experience {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ==========================
+   Napi ajánlat
+========================== */
+
+aside {
+    border-left: 6px solid var(--accent);
+    background: #fffaf5;
+}
+
+/* ==========================
+   Lábléc
+========================== */
+
+footer {
+    background: #ede2d6;
+    padding: 3rem 1.5rem;
+    margin-top: 3rem;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer address {
+    text-align: center;
+    font-style: normal;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.2rem;
+}
+
+footer nav p {
+    margin-left: 2rem;
+    color: var(--text);
+    font-size: .95rem;
+    white-space: nowrap;
+}
+
+/* ==========================
+   Reszponzív
+========================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 3rem 1rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    main>section,
+    aside {
+        padding: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    article {
+        padding: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section>a,
+    aside a,
+    #visit a {
+        display: block;
+        text-align: center;
+    }
+}

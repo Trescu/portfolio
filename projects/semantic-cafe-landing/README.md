@@ -9,3 +9,6 @@
     ## Használt technológia
 
     - HTML5
+    - CSS3
+    - JavaScript
+    - AI-al támogatott vizuális implementáció
