@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Contact Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Accessible Contact Form</h1>
+        <p>HTML5-alapú projektajánlat-kérő űrlap</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Projektajánlat kérése</h2>
+
+            <p>
+                Töltsd ki az alábbi űrlapot, ha weboldalhoz vagy
+                webalkalmazáshoz szeretnél ajánlatot kérni
+            </p>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="name">Név</label>
+                    <input id="name" name="name" type="text" required maxlength="80" placeholder="Pl. Kovács Anna">
+                </p>
+
+                <p>
+                    <label for="email">E-mail cím</label>
+                    <input id="email" name="email" type="email" required maxlength="120" placeholder="anna@example.com">
+                </p>
+
+                <p>
+                    <label for="phone">Telefonszám</label>
+                    <input id="phone" name="phone" type="tel" maxlength="30" placeholder="+36 30 123 4567">
+                </p>
+
+                <p>
+                    <label for="website">Meglévő weboldal</label>
+                    <input id="website" name="website" type="url" maxlength="120" placeholder="https://pelda.hu">
+                </p>
+
+                <p>
+                    <label for="deadline">Kívánt határidő</label>
+                    <input id="deadline" name="deadline" type="date">
+                </p>
+
+                <p>
+                    <label for="budget">Becsült költségkeret</label>
+                    <input id="budget" name="budget" type="number" placeholder="150000">
+                </p>
+
+                <p>
+                    <label for="message">Projektleírás</label>
+                    <textarea id="message" name="message" required minlength="20" maxlength="600" placeholder="Írd le röviden, milyen projektet szeretnél."></textarea>
+                </p>
+
+                <fieldset>
+                    <legend>Milyen típusú projektről van szó?</legend>
+                    <p>
+                        <input type="radio" name="project-type" id="project-website" value="weboldal" required>
+                        <label for="project-website">Weboldal</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="project-type" id="project-webapp" value="Webalkalmazás">
+                        <label for="project-webapp">Webalkalmazás</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="project-type" id="project-other" value="egyeb">
+                        <label for="project-other">Egyéb</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Milyen extra szolgáltatások érdekelnek?</legend>
+                    <p>
+                        <input type="checkbox" name="services" id="service-branding" value="arculattervezes">
+                        <label for="service-branding">Arculattervezés</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="services" id="service-seo" value="keresooptimalizalas">
+                        <label for="service-seo">Keresőoptimalizálás</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="services" id="service-maintance" value="karbantartas">
+                        <label for="service-maintance">karbantartás</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Ajánlatkérés elküldése</button>
+                </p>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Haladó webfejlesztés mini projekt</p>
+    </footer>
+
+</body>
+
+</html>
