@@ -1,0 +1,93 @@
+:root {
+    --color-primary: #1d4ed8;
+    --color-text: #1f2937;
+    --color-background: #f3f4f6;
+    --color-surface: #ffffff;
+
+    --space-small: 0.5rem;
+    --space-medium: 1rem;
+    --space-large: 2rem;
+
+    --content-width: 900px;
+    --border-width: 2px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.page-container {
+    width: 90%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+header,
+footer {
+    padding: var(--space-large) 0;
+    background-color: var(--color-primary);
+    color: var(--color-surface)
+}
+
+main {
+    padding: var(--space-large) 0;
+}
+
+section {
+    margin-bottom: var(--space-large);
+}
+
+.color-grid,
+.component-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-medium);
+}
+
+.color-sample,
+.component-card,
+.type-example {
+    padding: var(--space-medium);
+    border: 2px solid var(--color-primary);
+    box-sizing: border-box;
+    background-color: var(--color-surface);
+}
+
+.primary-sample {
+    background-color: var(--color-primary);
+    color: var(--color-surface)
+}
+
+.surface-sample {
+    background-color: var(--color-surface);
+    color: var(--color-text)
+}
+
+.background-sample {
+    background-color: var(--color-background);
+    color: var(--color-text)
+}
+
+.component-card a {
+    display: inline-block;
+    margin-top: var(--space-medium);
+    padding: var(--space-small) var(--space-medium);
+    border: var(--border-width) solid var(--color-action, var(--color-primary));
+    background-color: var(--color-action, var(--color-primary));
+    color: var(--color-surface);
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    .color-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .component-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
