@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937
+}
+
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.member-card {
+    width: 240px;
+    margin: 16px 0;
+    padding: 20px;
+    border: 1px solid #9ca3af;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.team {
+    display: flex;
+}
+
