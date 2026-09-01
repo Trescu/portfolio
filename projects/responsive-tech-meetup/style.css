@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    padding: 24px 0;
+    background-color: #e5e7eb;
+}
+
+main {
+    padding: 24px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+nav a {
+    display: block;
+    padding: 8px 0;
+    color: #1f2937
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.session-card {
+    padding: 20px;
+    border: 1px solid #9ca3af;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+@media (min-width: 600px) {
+    .schedule {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (min-width: 900px) {
+    nav {
+        display: flex;
+        gap: 24px;
+    }
+
+    nav a {
+        padding: 0;
+    }
+
+    .schedule {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
